@@ -1,16 +1,8 @@
-/* =========================================================
-   CONFIGURAÇÕES
-========================================================= */
-
 const currentValue = 0;
 const goalValue = 1000;
 
 const pixKey = "[SUA CHAVE PIX AQUI]";
 
-
-/* =========================================================
-   SUPABASE
-========================================================= */
 
 const supabaseClient =
     window.supabase && window.SUPABASE_CONFIG

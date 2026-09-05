@@ -265,9 +265,6 @@ function showCopyFeedback() {
 
 /* =========================================================
    MENSAGENS — ENVIO PÚBLICO
-   IMPORTANTE:
-   Não fazemos SELECT aqui.
-   O visitante só possui permissão de INSERT no banco.
 ========================================================= */
 
 const messageForm =

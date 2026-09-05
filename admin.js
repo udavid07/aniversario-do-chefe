@@ -1,7 +1,3 @@
-/* =========================================================
-   PAINEL PRIVADO — SUPABASE
-========================================================= */
-
 const supabaseClient =
     window.supabase && window.SUPABASE_CONFIG
         ? window.supabase.createClient(
@@ -66,10 +62,6 @@ function setAdminFeedback(text, type = "") {
 }
 
 
-/* =========================================================
-   LOGIN
-========================================================= */
-
 async function login(event) {
 
     event.preventDefault();
@@ -128,10 +120,6 @@ async function login(event) {
 }
 
 
-/* =========================================================
-   MOSTRAR DASHBOARD
-========================================================= */
-
 async function showDashboard() {
 
     const {
@@ -163,10 +151,6 @@ async function showDashboard() {
 
 }
 
-
-/* =========================================================
-   VERIFICAR SESSÃO
-========================================================= */
 
 async function checkSession() {
 
@@ -203,10 +187,6 @@ function showLogin() {
 
 }
 
-
-/* =========================================================
-   CARREGAR MENSAGENS
-========================================================= */
 
 async function loadMessages() {
 
@@ -254,10 +234,6 @@ async function loadMessages() {
 
 }
 
-
-/* =========================================================
-   RENDERIZAR MENSAGENS
-========================================================= */
 
 function renderMessages(messages) {
 
@@ -359,10 +335,6 @@ function renderMessages(messages) {
 }
 
 
-/* =========================================================
-   DATA
-========================================================= */
-
 function formatDate(value) {
 
     const date =
@@ -379,10 +351,6 @@ function formatDate(value) {
 
 }
 
-
-/* =========================================================
-   EXCLUIR
-========================================================= */
 
 async function deleteMessage(id) {
 
@@ -433,10 +401,6 @@ async function deleteMessage(id) {
 }
 
 
-/* =========================================================
-   SAIR
-========================================================= */
-
 async function logout() {
 
     await supabaseClient.auth.signOut();
@@ -452,10 +416,6 @@ async function logout() {
 
 }
 
-
-/* =========================================================
-   EVENTOS
-========================================================= */
 
 loginForm.addEventListener(
     "submit",
